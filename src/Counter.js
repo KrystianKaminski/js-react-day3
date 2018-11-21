@@ -8,15 +8,11 @@ class Counter extends React.Component {
 
         incHandler = () => this.setState({ number: this.state.number + 1})
         decHandler = () => this.setState({ number: this.state.number - 1})
-    
+        zeroHandler = () => this.setState( { number: 0})
+        defaultHandler = () => this.setState( {number: this.props.startNumber})
 
-    incHandler() {
-        this.setState( { number: this.state.number + 1})
-    }
 
-    decHandler() {
-         this.setState( { number: this.state.number - 1})
-    }
+
     render() {
         return (
             <div>
@@ -30,6 +26,14 @@ class Counter extends React.Component {
                  <Button
                     onClick={this.decHandler}
                     label={'-'}
+                />
+                 <Button
+                    onClick={this.zeroHandler}
+                    label={'Reset to 0'}
+                />
+                  <Button
+                    onClick={this.defaultHandler}
+                    label={'Reset to default'}
                 />
             </div>
         )
