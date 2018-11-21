@@ -15,7 +15,7 @@ class Navigation extends React.Component {
         return (
             <div>
                 <AppBar
-                    title="Twoja kaloria"
+                    title = {this.props.label}
                     onLeftIconButtonClick = {this.toggleDrawer}
                 />
                 <Drawer
