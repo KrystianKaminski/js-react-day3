@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import MenuItem from 'material-ui/MenuItem';
 
 import Paper from './components/Paper'
 import Counter from './Counter';
@@ -13,8 +14,12 @@ const App = (props) => (
         <Navigation
           label="Twoja Kaloria"
         >
+        <MenuItem>
           <Link to='/'>Dashboard</Link>
+        </MenuItem>
+        <MenuItem>
           <Link to='/counter'>Counter</Link>
+        </MenuItem>
         </Navigation>
         <Route path="/counter" exact={true} component={() => <Counter startNumber={5}/>} 
         />
