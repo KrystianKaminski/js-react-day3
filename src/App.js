@@ -13,6 +13,8 @@ const App = (props) => (
       />
     <Router>
       <div>
+        <Link to='/'>Dashboard</Link>
+        <Link to='/counter'>Counter</Link>
         <Route path="/counter" exact={true} component={() => <Counter startNumber={5}/>} 
         />
       </div>
