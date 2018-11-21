@@ -10,7 +10,7 @@ const Button = (props) => (
     <div>
         <RaisedButton
             label={props.label}
-            primary={Boolean(Math.round(Math.random()))}
+            primary={true}
             style={style}
             onClick={props.onClick}
         />

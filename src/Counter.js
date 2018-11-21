@@ -16,11 +16,11 @@ class Counter extends React.Component {
                     {this.state.number}
                 </h1>
                 <Button
-                    onClick={() => alert('Works!')}
+                    onClick={() => this.setState( { number: this.state.number + 1})}
                     label={'+'}
                 />
                  <Button
-                    onClick={() => alert('Works!')}
+                    onClick={() =>this.setState( { number: this.state.number - 1})}
                     label={'-'}
                 />
             </div>
