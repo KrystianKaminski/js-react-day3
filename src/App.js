@@ -1,17 +1,12 @@
 import React from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
+import Button from './components/Button';
 
-const style = {
-  margin: 12,
-};
 
 const App = (props) => (
   <div>
-        <RaisedButton
-            label="Primary"
-            primary={true}
-            style={style}
-         />
+    <Button
+      onClick={() => alert('fafd')}
+    />
   </div>
 )
 
