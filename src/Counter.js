@@ -3,13 +3,13 @@ import Button from './components/Button';
 
 class Counter extends React.Component {
     state = {
-            number: this.props.startNumber
-        }
+            number: this.props.startNumber || 0
+    }
 
         incHandler = () => this.setState({ number: this.state.number + 1})
         decHandler = () => this.setState({ number: this.state.number - 1})
         zeroHandler = () => this.setState( { number: 0})
-        defaultHandler = () => this.setState( {number: this.props.startNumber})
+        defaultHandler = () => this.setState( {number: this.props.startNumber || 0})
 
 
 
