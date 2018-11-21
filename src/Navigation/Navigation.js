@@ -1,6 +1,8 @@
 import React from 'react'
 
 import AppBar from 'material-ui/AppBar';
+import Drawer from 'material-ui/Drawer';
+
 
 
 const Navigation = (props) => (
@@ -8,9 +10,15 @@ const Navigation = (props) => (
         <AppBar
             title="Twoja kaloria"
             onLeftIconButtonClick = {() => alert('Click')}
-            iconClassNameRight="muidocs-icon-navigation-expand-more"
 
         />
+        <Drawer
+          docked={false}
+          width={200}
+          open={true}
+          onRequestChange={(open) =>console.log(open)}
+        >
+        </Drawer>
     </div>
 )
 
