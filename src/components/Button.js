@@ -9,7 +9,7 @@ const style = {
 const Button = (props) => (
     <div>
         <RaisedButton
-            label="Primary"
+            label={props.label}
             primary={Boolean(Math.round(Math.random()))}
             style={style}
             onClick={props.onClick}
