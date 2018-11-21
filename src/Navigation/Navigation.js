@@ -5,6 +5,9 @@ import Drawer from 'material-ui/Drawer';
 
 
 class Navigation extends React.Component {
+    state = {
+        isDrawerOpen: true
+    }
     
     render() {
         return ( 
@@ -16,7 +19,7 @@ class Navigation extends React.Component {
             <Drawer
             docked={false}
             width={200}
-            open={true}
+            open={this.state.isDrawerOpen}
             onRequestChange={(open) =>console.log(open)}
             >
             </Drawer>
