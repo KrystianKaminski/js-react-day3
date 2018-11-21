@@ -8,13 +8,14 @@ import Navigation from './Navigation/Navigation'
 
 const App = (props) => (
   <div>
-    <Navigation
-      label="Twoja Kaloria"
-      />
     <Router>
       <div>
-        <Link to='/'>Dashboard</Link>
-        <Link to='/counter'>Counter</Link>
+        <Navigation
+          label="Twoja Kaloria"
+        >
+          <Link to='/'>Dashboard</Link>
+          <Link to='/counter'>Counter</Link>
+        </Navigation>
         <Route path="/counter" exact={true} component={() => <Counter startNumber={5}/>} 
         />
       </div>
