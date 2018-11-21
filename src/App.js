@@ -1,13 +1,17 @@
 import React from 'react';
 import Button from './components/Button';
+import Paper from './components/Paper'
 
 
 const App = (props) => (
-  <div>
+  <Paper>
     <Button
       onClick={() => alert('fafd')}
     />
-  </div>
+     <Button
+      onClick={() => alert('fafd')}
+    />
+  </Paper>
 )
 
 
